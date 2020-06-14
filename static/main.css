@@ -1,0 +1,64 @@
+* {
+    margin: 0px;
+    font-family: "Calibri";
+}
+
+#players {
+    height: 40px;
+    width: 700px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.playerSection {
+    height: 100%;
+    float: left;
+    font-size: 15px;
+}
+
+#playerName {
+    width: 150px;
+}
+
+#opponentPlayerNames {
+    width: 550px;
+}
+
+.mainContainer {
+    display: inline-block;
+}
+
+#envContainer {
+    text-align: center;
+    width: 700px;
+    height: 700px;
+    float: left;
+}
+
+#insContainer {
+    width: 500px;
+    height: 700px;
+    margin-top: 70px;
+    float: right;
+}
+
+#opponentTableCardsContainer {
+    padding-top: 20px;
+}
+
+.textToUser {
+    height: 50px;
+}
+
+.gameDiv {
+    height: 150px;
+}
+
+.playerLabel {
+    height: 25px;
+}
+
+img {
+    height: 100px;
+    margin-top: 15px;
+}

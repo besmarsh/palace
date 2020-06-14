@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Multiplayer Game</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <base href="/">
+    <link rel="stylesheet" href="/static/main.css" type="text/css" />
+    <link rel="shortcut icon" href="/static/favicon.ico" />
+  </head>
+  <body>
+    <div id="players">
+      <h6 class="playerSection" id="playerName"></h6>
+      <h6 class="playerSection" id="opponentPlayerNames"></h6>
+    </div>
+    <div class="mainContainer" id="envContainer">
+      <h1 class="textToUser" id="userMessageBox"></h1>
+      <div id="gameContainer" hidden>
+        <h1 class="textToUser" id="gameCommentary">Game Begins</h1>
+        <div class="gameDiv" id="opponentTableCardsContainer">
+          <h3 class="playerLabel">Opponent</h3>
+          <img class="card" id="opponentCardPlaceholder1">
+          <img class="card" id="opponentCardPlaceholder2">
+          <img class="card" id="opponentCardPlaceholder3">
+          <img class="card" id="opponentCardPlaceholder4">
+          <img class="card" id="opponentCardPlaceholder5">
+          <img class="card" id="opponentCardPlaceholder6">
+        </div>
+        <div class="gameDiv" id="activeDeckContainer">
+          <img class="upCard"id="activeDeckCard">
+        </div>
+        <div class="gameDiv" id="ownTableCardsContainer">
+            <h3 class="playerLabel">You</h3>
+            <img class="card" id="ownCardPlaceholder1">
+            <img class="card" id="ownCardPlaceholder2">
+            <img class="card" id="ownCardPlaceholder3">
+            <img class="card" id="ownCardPlaceholder4">
+            <img class="card" id="ownCardPlaceholder5">
+            <img class="card" id="ownCardPlaceholder6">
+        </div>
+        <div class="gameDiv" id="ownHandContainer">
+            <h3 class="playerLabel">Your hand</h3>
+            <img class="card" id="ownHandCard1">
+            <img class="card" id="ownHandCard2">
+            <img class="card" id="ownHandCard3">
+            <img class="card" id="ownHandCard4">
+            <img class="card" id="ownHandCard5">
+            <img class="card" id="ownHandCard6">
+        </div>
+      </div>
+    </div>
+    <div class="mainContainer" id='insContainer'>
+      <h1>How To Play</h1>
+      <h3>Start of the Game</h3>
+      <ul>
+        <li>Click 'Start Game' when all players have joined</li>
+      </ul>
+      <h3>Swapping Cards</h3>
+      <ul>
+        <li>Click on a card in your hand that you'd like to swap</li>
+        <li>Click on a card in the "You" section that you'd like to swap your hand card with</li>
+        <li>Repeat for as many cards as you want to swap</li>
+        <li>Click "Done" when you've finished</li>
+      </ul>
+      <h3>Playing Cards</h3>
+      <ul>
+        <li>To play one card, click the card you would like to play</li>
+        <li>Next, click the card on top of the deck to play your card</li>
+        <li>To play multiple cards, click all the cards you would like to play</li>
+        <li>Next, click the card on top of the deck to play your cards</li>
+      </ul>
+      <h3>Picking up</h3>
+      <ul>
+        <li>If you can't play and need to pick up, click the card on top of the deck</li>
+      </ul>
+    </div>
+  </body>
+  <script src="/static/game.js"></script>
+</html>

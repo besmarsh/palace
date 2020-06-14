@@ -1,0 +1,30 @@
+{
+  "name": "palace",
+  "version": "2.2.0",
+  "description": "Online multiplayer card game Palace",
+  "license": "GPL-3.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/besmarsh/palace.git"
+  },
+  "keywords": [
+    "palace",
+    "card",
+    "game",
+    "shithead",
+    "threes",
+    "shed"
+  ],
+  "author": "Ben Marsh",
+  "homepage": "https://github.com/besmarsh/palace#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "path": "^0.12.7",
+    "socket.io": "^2.3.0"
+  }
+}
